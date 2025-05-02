@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // logical operator - && || !
+        //parseInt() parseFloat()
+        let a = parseInt(prompt("ENter a:"))
+        let b1 = prompt("ENter b:")
+        let b = parseInt(b1)
+        let c = parseInt(prompt("ENter c:"))
+        document.write('<br> addition is '+(a+b))
+        //a = 12 b=2 c = 25
+        //12>2 && 12>25 - false
+        document.write('<br> a gt b && a > c is -- '+((a>b)&&(a>c)))
+        //12>2 || 12>25 - true
+        document.write('<br> a gt b || a gtc is -- '+((a>b)||(a>c)))
+        document.write('<br> not a gt b || a gtc is -- '+!((a>b)||(a>c)))
+        const pi=3.14
+        let r = parseFloat(prompt("Enter radious"))
+        let area = pi*r**2
+        document.write('<br> Area of circle is '+area)
+    </script>
+</body>
+</html>
