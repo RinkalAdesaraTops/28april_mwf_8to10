@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let number = prompt("Enter age:");
+        // Convert the input to a number    
+        number = parseInt(number); // Base 10 for decimal numbers
+
+        if (number>=18) {
+            console.log("Eligible 4 vote.");
+        } else {
+            console.log("Not Eligible 4 vote.");
+        }
+        let m1 = parseInt(prompt("Enter m1:"));
+        let m2 = parseInt(prompt("Enter m2:")); 
+        let m3 = parseInt(prompt("Enter m3:"));
+        let total = m1 + m2 + m3;
+        let avg = total / 3;
+        console.log("Total is: " + total);
+        console.log("Avg is: " + avg);
+        if(avg >=80){
+            document.write('<br> Grade A+')      
+        } else if(avg>=70 && age<80){
+            document.write('<br> Grade A') 
+        } else if(avg>=60 && age<70){
+            document.write('<br> Grade B') 
+        } else if(avg>=50 && age<60){
+            document.write('<br> Grade C') 
+        } else if(avg>=40 && age<50){
+            document.write('<br> Grade D') 
+        } else {
+            document.write('<br> Fail')
+
+        }
+    </script>
+</body>
+</html>

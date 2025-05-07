@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10, 20, 30, 40, 50]
+        // document.write('<br> arr is '+arr[0])
+        //loops
+        let i=1
+        while(i<=5){ //entry controlled loop
+            // document.write('<br> arr is '+i)
+            i++
+        }
+        i=1
+        //do while - exit controlled loop
+        do {
+            // document.write('<br> arr is '+i)
+            i++
+        } while(i<=10)
+        
+        for(i=1; i<=5; i+=1){ //declaration condition increment
+            // document.write('<br> arr is '+i)
+        }
+
+        document.write('<br> <hr>For in Loop <hr>')
+        //for in 
+        //for of
+        for(let i in arr){ //index based loop - object - key value pair
+            document.write('<br> i - is '+arr[i])
+        }
+        document.write('<br> <hr>For of Loop <hr>')
+        for(let i of arr){ //value based loop- array elements 
+            document.write('<br> i - is '+i)
+        }
+
+    </script>
+</body>
+</html>
