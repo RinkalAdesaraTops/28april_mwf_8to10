@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=450,b=250,c=35
+        //Nested if
+        if(a>b){
+            if(a>c){
+                document.write('<br> A is max')               
+            } else {
+                document.write('<br> C is max')               
+            }
+        } else {
+            if(b>c){
+                document.write('<br> B is max')               
+            } else {
+                document.write('<br> C is max')                            
+            } 
+        }
+        document.write((a>b)?(a>c)?"A is max":"C is max":(b>c)?"B is max":"C is max")
+        
+        // if(a>b && a>c){
+        //     document.write('<br> A is maximum')
+        // } else if(b>c){
+        //     document.write('<br> B is maximum')
+        // } else {
+        //     document.write('<br> C is maximum')         
+        // }
+    </script>
+</body>
+</html>

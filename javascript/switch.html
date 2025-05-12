@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a= parseInt(prompt("Enter a number:"));
+        let b= parseInt(prompt("Enter b number:"));
+        let ch= parseInt(prompt("1.Add <br> 2.Minus <br> 3.Mult <br>4.Divide <br>Enter Choice:"));
+        switch(ch){
+            case 1: document.write('<br> Addition is '+(a+b)); 
+            break;
+            case 2: document.write('<br> Subtraction is '+(a-b));
+            break;
+            case 3: document.write('<br> Multiplication is '+(a*b));
+            break;
+            case 4: document.write('<br> Division is '+(a/b));
+            break;
+            default: document.write('<br> Invalid choice');
+                    break       
+            
+        }
+    </script>
+</body>
+</html>
