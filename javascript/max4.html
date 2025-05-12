@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = 20;
+        let c = 20;
+        let d = 200;
+        document.write((a>b)?(a>c)?(a>d)?"A is max":"D is max":(c>d)?"C is max":"D is max":(b>c)?(b>d)?"B is max":"D is max":(c>d)?"C is max":"D is max")
+
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    document.write('A is max')
+                } else {
+                    document.write('D is max')
+                }
+            } else {
+                if(c>d){
+                    document.write('C is max')
+                } else {
+                    document.write('D is max')
+                }
+            }
+        } else {
+            if(b>c){
+                if(b>d){
+                    document.write('B is max')
+                } else {
+                    document.write('D is max')
+                }
+            } else {
+                if(c>d){
+                    document.write('C is max')
+                } else {
+                    document.write('D is max')
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

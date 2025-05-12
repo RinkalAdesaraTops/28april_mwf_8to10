@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function isMagicNumber(num) {
+            let sum = 0;
+            let temp = num;
+
+            // Calculate the sum of digits
+            while (temp > 0) {
+                sum += temp % 10;
+                temp = Math.floor(temp / 10);
+            }
+
+            // Reverse the sum
+            let reverse = 0;
+            let tempSum = sum;
+            while (tempSum > 0) {
+                reverse = (reverse * 10) + (tempSum % 10);
+                tempSum = Math.floor(tempSum / 10);
+            }
+
+            // Check if the product of sum and reverse equals the original number
+            return sum * reverse === num;
+        }
+
+        let magicCount = 0;
+        let range = 10000; // Define the range to check for magic numbers
+
+        for (let i = 1; i <= range; i++) {
+            if (isMagicNumber(i)) {
+                document.write('<br>Magic no is '+i)
+                magicCount++;
+            }
+        }
+
+        document.write('<h3>Total Magic Numbers from 1 to ' + range + ': ' + magicCount + '</h3>');
+    
+    </script>
+</body>
+</html>

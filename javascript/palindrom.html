@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=121 //321
+        let f = n
+        let rev = 0
+        while(n>0){
+            let r = n%10 //123%10 = 3*10=30+2 = 32*10 +1 = 321
+            n = Math.floor(n/10)
+            rev = (rev*10)+r
+        }
+        document.write('Reverse is '+rev)
+        document.write('<br>N is '+f)
+        if(rev == f){
+            document.write('<br>Palindrom no')
+        } else {
+            document.write('<br>Not Palindrom no')
+        }
+
+        //magic no == 1729 =1+7+2+9
+        //sum of digits == 19
+        //reverse == 91
+        //multiply = 19*91 = 1729
+    </script>
+</body>
+</html>
