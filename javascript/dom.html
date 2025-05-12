@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="txt">DOM Example</h3>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt temporibus non mollitia autem, laudantium dolorem debitis </div>
+    <p class="box">beatae provident quos commodi ex totam, dolor tempore quibusdam aspernatur laboriosam vitae ab?</p>
+    <input type="text" name="uname" id="uname" value="ABCD">
+    <p>trwte sfhjgsd ewsdjfsjdhg</p>
+    <script>
+        document.getElementById('txt').style.color = "red"
+        document.getElementsByName('uname')[0].style.color = "brown"
+        let a = document.getElementsByClassName('box')
+        console.log(a);       
+        a[0].style.color = "blue"
+        a[1].style.color = "yellowgreen"
+        document.getElementsByTagName("p")[0].style.color = "aqua"
+        document.getElementsByTagName("p")[1].style.backgroundColor = "aqua"
+    </script>
+</body>
+</html>
