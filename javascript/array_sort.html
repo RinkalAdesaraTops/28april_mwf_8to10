@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = ["xyz","jkl","abc","pqr"]
+        let arr = [123,34,21,560,77,88,95,4,50]
+        document.write('<br> Sorting '+arr.sort())
+        document.write('<br> Reverse Sorting '+arr.reverse())
+        //compare function
+        document.write('<hr>')
+        document.write('<br> Sorting '+arr.sort(function(i,j){
+            return i-j //123-34 = +ve 21-560 = -
+        }))
+        // document.write('<br> Reverse Sorting '+arr.reverse())
+
+
+    </script>
+</body>
+</html>
