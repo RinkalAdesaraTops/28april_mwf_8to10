@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "jsdfg jerh ture"
+        document.write('<br> String length is '+str.length)
+        document.write('<br>UpperCase '+str.toUpperCase())
+        document.write('<br>LowerCase '+str.toLowerCase())
+        let s = str.slice(3,7) //7 --  6th position
+        document.write('<br> 3rd position is '+s)
+        let s1 = str.substr(3,7) //7 - total 7 character from 3rd position
+        document.write('<br> 3rd position substr is '+s1)
+        let s2 = "     hjgsdf shjgfjhs sjhfgs       "
+        document.write('<br> S2 is '+s2.length)
+        document.write('<br> S2 is '+s2.trim().length)
+        document.write('<br> S2 is '+s2.trimStart().length)
+        document.write('<br> S2 is '+s2.trimEnd().length)
+        s2 = "35"
+        // s3 = s2.padStart(5,"Rs")
+        s3 = s2.padEnd(5,"Rs")
+        document.write('<br> S2 is '+s3)
+        let a = "hi helli Hi jsrter hi"
+        //at a time only 1 word replace
+        //case sensitive
+        // let rep = a.replace("hI","TEST")
+        let rep = a.replace(/hI/ig,"TEST")
+        // document.write('<br> Original String is '+a)
+        // document.write('<br> Replace String is '+rep)
+        rep = a.replaceAll(/hi/gi,"ABCD")
+        document.write('<br> Original String is '+a)
+        document.write('<br> Replace String is '+rep)
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // UDF - user defined function
+        //1) Take nothing return nothing
+        // function add(){
+        //     let a= parseInt(prompt("Enter a number:"));
+        //     let b= parseInt(prompt("Enter b number:"));
+        //     document.write('<br> Addition is '+(a+b));
+        // }
+        const add = ()=>{
+            let a= parseInt(prompt("Enter a number:"));
+            let b= parseInt(prompt("Enter b number:"));
+            document.write('<br> Addition is '+(a+b));
+        }
+        add()
+        //2)Take something return nothing
+        // function area(r){
+        //     const pi=3.14
+        //     document.write('<br> Area of circle is '+(pi*r**2))           
+        // }
+        const area = (r)=>{
+            const pi=3.14
+            document.write('<br> Area of circle is '+(pi*r**2))
+        }
+        area(25)
+        //3)Take nothing return something
+        let a= parseInt(prompt("Enter a number:"));
+        let b= parseInt(prompt("Enter b number:"));
+        // function sub(){
+            
+        //     return (a-b);
+        // }
+        const sub = ()=> a-b //fat arrow function
+        // ans = sub()
+        // document.write('<br> Subtraction is '+ans);
+        document.write('<br> Subtraction is '+sub());
+        //4) Take something return something
+        // function cube(a,b){
+        //     return (a*b**3);
+        // }
+        // let cube = (a,b)=> a*b**3
+        let cube = (a,b)=> {
+            return a*b**3
+        }
+        document.write('<br> Cube is '+cube(5,2));
+        let fact = (a)=>{
+            let m = 1
+            let i=1
+            while(a>=i){
+                m = m*a
+                a--
+            }
+            document.write('<br> Factorial is '+m)
+        }
+        fact(5)
+    </script>
+</body>
+</html>
