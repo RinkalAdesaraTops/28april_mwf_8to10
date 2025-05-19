@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,55,20,44]
+        //map - doesnt change original array - it creates copy of array
+        let a = arr.map((i,index)=>{
+            console.log(index);
+            
+                return i*2
+        })
+        let b = arr.forEach((i)=>{
+            document.write('<br>'+i*2)
+            //  return i*2
+        })
+        document.write('<br>'+arr)
+        document.write('<br>'+a)
+        // document.write('<br>'+b)
+        //Filter -- ALWAYS RETURN ARRAY
+        //find-- always return single value
+        let srch = arr.filter((i,index)=>{
+            return i==200
+        })
+        console.log(srch);
+        let res = arr.includes(550)
+        document.write('<br>'+res)
+        //reduce
+        arr = [1,2,3,4,5]
+        let ans = arr.reduceRight((curr,next)=>{
+            console.log("curr "+curr);
+            console.log("next "+next);
+            return curr+next
+        },10)
+        document.write('<br> Answer is '+ans)
+        // [10,20,30,55,20,44]
+        arr = [10,20,30,55,20,44]
+        res = arr.reduce((curr,next)=>{     
+                if(curr<next){ //55>20
+                    curr = next
+                }
+                return curr
+        })
+        document.write('max is '+res)
+    </script>
+</body>
+</html>
