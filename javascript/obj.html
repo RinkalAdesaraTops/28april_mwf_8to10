@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let obj = {
+            "name":"abc",
+            "age":25,
+            "salary":35000,
+            "dispFun":function(){
+                return this.name+"----"+this.age
+            },
+            //getter method
+            get dispName(){
+                return this.name
+            },
+            set setNewName(n){
+                this.name = n
+            }
+       }
+    //    document.write('Name is '+obj.name)
+    //    document.write('<br>Age is '+obj['age'])
+       
+    obj.lastname = "XYZ"
+    obj.firstname ="prfulkaka"
+    document.write('<br> firstName is '+obj.firstname)
+    document.write('<br> lastName is '+obj.lastname)
+    //    delete obj['age']
+       obj.name = "PQR"
+    //    for(let a in obj){
+    //     document.write('<br>'+a+" is "+obj[a])
+    //    }
+    document.write('<br> Name is '+obj.dispName)
+    obj.setNewName = "Testiomg"
+    document.write('<br> Name is '+obj.dispName)
+
+    // document.write('Display fun called..'+obj.dispFun())
+    </script>
+</body>
+</html>
