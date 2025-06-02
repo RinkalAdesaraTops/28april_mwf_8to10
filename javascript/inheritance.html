@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{ //parent/super/base class 
+            constructor(){
+                console.log('parent constructor called...');           
+            }
+            disp(){
+                document.write('<br>Addition is '+(20+30))
+            }
+        } 
+        class xyz extends abc{ //child sub derived class
+            constructor(){
+                super() //call parent class constructor
+                console.log('child class constructor called...');           
+            }
+            disp2(){
+                document.write('<br>Minus is '+(30-5))
+            }
+        }
+        let obj = new xyz()
+        obj.disp()
+        obj.disp2()
+    </script>
+</body>
+</html>

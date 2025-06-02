@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class & object
+        //constructor 
+        //inheritance
+        //polymorphism
+        // data abstraction & encapsulation
+        class abc{
+            //default constructor
+            constructor(){
+                console.log("constructor called...");               
+                this.a = 10
+                this.b = 20
+            }
+            add = ()=>{
+                document.write('<br> Addition is '+(this.a+this.b))
+            }
+        }
+        let obj = new abc()
+        obj.add()
+        //diff b/w normal fun & constructor fun
+        //normal fun -- we must have to call with object
+        //constructor - it is special member func - it will automatically called when obj is created 
+        //object - runtime entity
+        //class = collection of member variable & function
+    </script>
+</body>
+</html>

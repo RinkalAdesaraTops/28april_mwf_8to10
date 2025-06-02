@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //data abstraction - data hiding
+        class rectangle{
+            constructor(){
+                console.log("parent called..");            
+            }
+            area(r){
+                const pi=3.14
+                document.write('Area of circle is '+(pi*r**2))
+            }
+        }
+        class triangle extends rectangle{
+            constructor(){
+                super()
+                console.log("child called..");            
+            }
+            area(h,b,l){
+                super.area(h) //data abstraction
+                document.write('<br>Area of Triangle is '+(h*b*l))
+            }
+        }
+        let obj = new triangle()
+        obj.area(3,4,5)
+        //public-all private-only me--  protected-parent-child
+        // encapsulation - wrapping up of data into single unit - object
+        //polymorphism -- one name multiple form
+        // dynamic/runtime binding - overiding
+        // -->func name same , argument same but in parent-child class
+        //static/ compile time binding - overloading
+        //-->func name same but arguments are different
+        // what is class & objects
+        // how many types of constructor
+        // what is diff b/w normal fun & constructor
+        // data abstraction
+        // encapsulation
+        // polymorphism
+        // method overiding & overloading
+        // what is use of super keyword & this & new & extend keyword
+    </script>
+</body>
+</html>
