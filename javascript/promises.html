@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //high order function
+        const isEven = (n)=>{
+                return n%2==0
+        }
+        const Hof = (func,a)=>{
+            let ans = func(a)
+            if(ans){
+                document.write('It is even no')
+            } else {
+                document.write('It is odd no')
+            }
+        }
+        Hof(isEven,25)
+        //check no is armstrong or not using HOF.
+//         const add = ()=>{
+//             minus()
+//         }
+//         const minus = ()=>{
+//             // hgjhgjh
+//             division()
+//         }
+//         const division = ()=>{
+//             // multiply()
+//         }
+// //callback hell problem - synchronous manner
+// //promises - Asynchronous - async-await
+//         add()
+//pending
+//fulfilled/resolved 
+//rejected 
+        let pr = new Promise((res,rej)=>{
+            rej("Promise rejected")
+            res("Promise completed")
+        }).then((msg)=>console.log(msg))
+        .catch((err)=>console.log("Error --- "+err))
+        const add = async()=>{
+           await minus()
+        }
+    </script>
+</body>
+</html>

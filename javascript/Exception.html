@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Exception - user generated error 
+        //exception handling - try___catch block
+       try{
+            //error generate 
+            let a= 35
+            let b= 5
+            if(b>0){
+                document.write('<br>Division is '+(a/b))
+            } else {
+                throw "Zero is not divisible"
+            }
+       } catch(e){
+            document.write('<br> Error is '+e)
+       }
+       finally{
+            document.write('<br> Always executed...')
+       }
+    </script>
+</body>
+</html>
