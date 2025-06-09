@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Search : <input type="text" name="srh" id="srh">
+    <button onclick="searchData()">Search Name</button>
+    <!-- <button onclick="dispData()">Clear</button> -->
+    <br><br>
+    <select name="order" id="order">
+        <option value="">--Select Order--</option>
+        <option value="1">ASC</option>
+        <option value="2">DESC</option>
+    </select>
+    <table border="2" align="center" cellspacing="0" height="200px" width="250px">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+        <tbody id="userdata"></tbody>
+    </table>
+    <script>
+        let users = [
+            {
+                id:1,
+                name:"abc",
+                age:24,
+                salary:25000
+            },
+            {
+                id:2,
+                name:"xyz",
+                age:27,
+                salary:28000
+            },
+            {
+                id:3,
+                name:"abcrtrt",
+                age:32,
+                salary:35000
+            },
+            {
+                id:4,
+                name:"yuiyui",
+                age:35,
+                salary:35000
+            },
+            {
+                id:5,
+                name:"xtee",
+                age:18,
+                salary:45000
+            }
+        ]
+        let a = ''
+        
+        const searchData = ()=>{
+            let a= document.getElementById('srh').value //abc
+            let ans = users.filter((i)=>{
+                if(i.name.includes(a)){
+                    return i
+                }
+                // return i.name == a
+            })
+            dispData(ans)
+            // a = ''
+            // ans.map((i)=>{
+            //         a += `<tr>
+            //                 <td>${i.id}</td>
+            //                 <td>${i.name}</td>
+            //                 <td>${i.age}</td>
+            //                 <td>${i.salary}</td>
+            //             </tr>`
+            //     })
+            // document.getElementById('userdata').innerHTML = a
+        }
+        const dispData = (users)=>{
+            a= ''
+            users.map((i)=>{
+                    a += `<tr>
+                            <td>${i.id}</td>
+                            <td>${i.name}</td>
+                            <td>${i.age}</td>
+                            <td>${i.salary}</td>
+                        </tr>`
+                })
+            document.getElementById('userdata').innerHTML = a
+            document.getElementById('srh').value = ''
+        }
+        dispData(users)
+       
+    </script>
+</body>
+</html>
