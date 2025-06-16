@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" name="findname" id="findname" placeholder="Enter any name" oninput="searchName()">
+    <!-- <button onclick="searchName()">Search Name</button> -->
+    <br><br>
+    <table border="2" align="center" width="300px">
+        <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Salary</td>
+        </tr>
+        </thead>
+        <tbody id="alldata"></tbody>
+    </table>
+    <script>
+        let data = [
+            {
+                id:101,
+                name:"abcd",
+                age:"26",
+                salary:45000
+            },
+            {
+                id:102,
+                name:"xyzs",
+                age:"20",
+                salary:35400
+            },
+            {
+                id:103,
+                name:"rtyrty",
+                age:"29",
+                salary:45000
+            },
+            {
+                id:104,
+                name:"abcd",
+                age:"29",
+                salary:45000
+            },
+            {
+                id:105,
+                name:"abcd",
+                age:"30",
+                salary:65000
+            },
+            {
+                id:106,
+                name:"xyzere",
+                age:"32",
+                salary:55000
+            }
+        ]
+        const dispData = (data)=>{
+            let tr = ''
+            data.map((i)=>{
+                tr+= `<tr>
+                        <td>${i.id}</td>
+                        <td>${i.name}</td>
+                        <td>${i.age}</td>
+                        <td>${i.salary}</td>
+                    </tr>`
+            })
+            document.getElementById('alldata').innerHTML = tr
+        }
+
+        const searchName = ()=>{
+            let a = document.getElementById('findname').value
+            console.log(a);
+            
+            let res = data.filter((i)=>{
+                   if(i.name.includes(a) || i.age.includes(a)){
+                        return i
+                   }
+            })
+            console.log(res);
+            dispData(res)
+        }
+
+        dispData(data)
+    </script>
+</body>
+</html>

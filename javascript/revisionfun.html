@@ -10,7 +10,7 @@
     <button onclick="searchData()">Search Name</button>
     <!-- <button onclick="dispData()">Clear</button> -->
     <br><br>
-    <select name="order" id="order">
+    <select name="order" id="order" onchange="getData()">
         <option value="">--Select Order--</option>
         <option value="1">ASC</option>
         <option value="2">DESC</option>
@@ -34,7 +34,7 @@
             },
             {
                 id:2,
-                name:"xyz",
+                name:"xyiz",
                 age:27,
                 salary:28000
             },
@@ -57,6 +57,7 @@
                 salary:45000
             }
         ]
+        let userdata = users.map((i)=>i)
         let a = ''
         
         const searchData = ()=>{
@@ -67,6 +68,7 @@
                 }
                 // return i.name == a
             })
+            console.log(ans);           
             dispData(ans)
             // a = ''
             // ans.map((i)=>{
@@ -93,7 +95,23 @@
             document.getElementById('srh').value = ''
         }
         dispData(users)
-       
+       const getData = ()=>{
+            let a = document.getElementById('order').value
+            if(a=="1"){
+                let ans = userdata.sort(function(i,j){
+                            return i.age-j.age
+                })
+                dispData(ans)       
+            } else if(a=="2"){
+                let ans = userdata.sort(function(i,j){
+                            return j.age-i.age
+                })
+                dispData(ans)
+            } else {
+                dispData(users)
+            }
+       }
+       //addEventListener
     </script>
 </body>
 </html>
