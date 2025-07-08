@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import FirstComponent from './FirstComponent';
+import BootstrapExample from './BootstrapExample';
+import MaterialUI from './MaterialUI';
+import StyledExample from './StyledExample';
 function App() {
   var name="Rinkal"
   const age = 25
@@ -22,7 +25,10 @@ function App() {
         }
       </ul> */}
 
-      <FirstComponent />
+      {/* <FirstComponent /> */}
+      {/* <BootstrapExample /> */}
+      {/* <MaterialUI /> */}
+      <StyledExample />
     </div>
   );
 }
