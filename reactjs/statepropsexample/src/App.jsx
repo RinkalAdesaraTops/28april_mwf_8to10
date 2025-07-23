@@ -6,6 +6,7 @@ import CounterComponent from './CounterComponent'
 import StateExample from './StateExample'
 import LifecycleClass from './LifecycleClass'
 import LIfecycleFunction from './LIfecycleFunction'
+import UserCrudComponent from './UserCrudComponent'
 
 function App() {
   let name="Test"
@@ -17,7 +18,8 @@ function App() {
       {/* <CounterComponent myname={name} myage={age} count={10} /> */}
       {/* <StateExample /> */}
       {/* <LifecycleClass mysalary="25000"/> */}
-      <LIfecycleFunction />
+      {/* <LIfecycleFunction /> */}
+      <UserCrudComponent />
     </>
   )
 }
