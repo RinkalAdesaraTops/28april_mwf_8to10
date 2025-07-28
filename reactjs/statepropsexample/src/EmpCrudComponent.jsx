@@ -117,5 +117,4 @@ const EmpCrudComponent = () => {
     </div>
   );
 };
-
 export default EmpCrudComponent;
