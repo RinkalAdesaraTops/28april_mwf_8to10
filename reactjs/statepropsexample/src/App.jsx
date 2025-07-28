@@ -7,6 +7,7 @@ import StateExample from './StateExample'
 import LifecycleClass from './LifecycleClass'
 import LIfecycleFunction from './LIfecycleFunction'
 import UserCrudComponent from './UserCrudComponent'
+import EmpCrudComponent from './EmpCrudComponent'
 
 function App() {
   let name="Test"
@@ -19,7 +20,8 @@ function App() {
       {/* <StateExample /> */}
       {/* <LifecycleClass mysalary="25000"/> */}
       {/* <LIfecycleFunction /> */}
-      <UserCrudComponent />
+      {/* <UserCrudComponent /> */}
+      <EmpCrudComponent />
     </>
   )
 }
