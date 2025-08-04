@@ -6,12 +6,11 @@ const LIfecycleFunction = () => {
     setTimeout(()=>{
         setCount(count+1)
     },3000)
-  })
+  },[])
   return (
     <div>
         <h3>Count is -- {count}</h3>
     </div>
   )
 }
-
 export default LIfecycleFunction

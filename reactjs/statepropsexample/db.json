@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "abc",
+      "age": 25,
+      "salary": 35000
+    },
+    {
+      "name": "dfgdfg",
+      "age": "22",
+      "salary": "34441",
+      "id": 2
+    },
+    {
+      "name": "dfgdfg",
+      "age": "22",
+      "salary": "34441",
+      "id": 3
+    }
+  ],
+  "category": [],
+  "products": []
+}

@@ -8,6 +8,7 @@ import LifecycleClass from './LifecycleClass'
 import LIfecycleFunction from './LIfecycleFunction'
 import UserCrudComponent from './UserCrudComponent'
 import EmpCrudComponent from './EmpCrudComponent'
+import ApiCrudExample from './ApiCrudExample'
 
 function App() {
   let name="Test"
@@ -21,7 +22,8 @@ function App() {
       {/* <LifecycleClass mysalary="25000"/> */}
       {/* <LIfecycleFunction /> */}
       {/* <UserCrudComponent /> */}
-      <EmpCrudComponent />
+      {/* <EmpCrudComponent /> */}
+      <ApiCrudExample />
     </>
   )
 }

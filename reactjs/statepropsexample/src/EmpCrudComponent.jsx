@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const EmpCrudComponent = () => {
   const [data, setData] = useState({
     uname: "",
@@ -30,6 +29,7 @@ const EmpCrudComponent = () => {
             setAllData(res)
     } else {
       setAllData([...alldata, data]);
+      // localStorage.setItem('userinfo',JSON.stringify(alldata))
     }
 
     setData({
