@@ -1,0 +1,19 @@
+react js
+state - props
+lifecycle
+class & function component
+inline,internal & external command
+material ui
+bootstrap
+module css
+styled component
+useState
+useEffect
+normal crud
+shortcut crud
+api - fetch..then
+Axios 
+json-server
+
+
+conditional rendering
