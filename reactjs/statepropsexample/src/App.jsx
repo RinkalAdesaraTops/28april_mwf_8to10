@@ -13,6 +13,8 @@ import RevisionApiCRUD from './RevisionApiCRUD'
 import Menu from './Menu'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './Home'
+import Home1 from './Home1'
+import Home2 from './Home2'
 
 function App() {
   let name="Test"
@@ -23,7 +25,10 @@ function App() {
       <Menu />
       {/* <BrowserRouter> */}
       <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path='/home' element={<Home />}>
+          <Route path='h1' element={<Home1 />}/>
+          <Route path='h2' element={<Home2 />}/>
+        </Route>
         <Route path="/contact" element={<LifecycleClass />} />
         <Route path="/about" element={<LIfecycleFunction />} />
       </Routes>
