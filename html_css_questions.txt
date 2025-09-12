@@ -1,0 +1,42 @@
+HTML Questions
+1)what is html
+2)what is css
+3)which type of tags in html? 
+4)what is inline & block level tags?
+5)ul tag types 
+6)ol tag types <ol type="a">
+	</ol>
+7)what is meaning of rowspan & colspan
+8)marquee tag properties
+9)how many types of link in <a>tag?
+10)audio,video & iframe syntax
+11)input tag types 
+12)how many symantic tags?
+13)diff b/w html & html5
+-------------------------------------------------------
+what is CSS
+types of css
+what is box model
+explain background property
+explain display property
+explain float property
+how many methods to assign a value to margin
+diff b/w visibility:hidden & display:none
+list style types
+diff types of selectors
+what are pseudo elements & classes?
+In inline elements, margin-top or margin-bottom affects?
+font-face property
+what is opacity
+diff b/w border-box & content-box
+z-index how works?
+flex-grow property
+grid-area property
+diff b/w justify-content & align-item properties
+diff b/w position:fixed & sticky
+In transform property diff b/w scale & skew
+diff b/w word-spacing & letter-spacing
+
+
+
+
