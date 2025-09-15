@@ -6,6 +6,7 @@ import UserCrudComponent from './UserCrudComponent'
 import UsememoExample from './UsememoExample'
 import ContextExample from './ContextExample'
 import UsecontextExample from './UsecontextExample'
+import Customhook from './Customhook'
 
 function App() {
   let [count,setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
   
   return (
     <>
-    <UsecontextExample />
+    <Customhook />
+    {/* <UsecontextExample /> */}
     {/* <ContextExample /> */}
     {/* <UsememoExample /> */}
     {/* <UserCrudComponent /> */}
