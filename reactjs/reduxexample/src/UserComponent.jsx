@@ -8,7 +8,7 @@ const UserComponent = () => {
         age:""
     }) 
     const alldata = useSelector((state)=>state.data)
-    const [id,setId]=useState()
+    const [id,setId]=useState('')
     const dispatch = useDispatch()
     const handleChange = (e)=>{
         const {name,value}=e.target
@@ -21,11 +21,14 @@ const UserComponent = () => {
     const saveData = (e)=>{
         e.preventDefault()
         if(id!=''){
+            console.log('upd called.');
+            
             dispatch(updFunc(id,data))
         } else {
+            console.log('ins called.');
+            
             dispatch(addFunc(data))
         }
-
         setData({
             name:'',
             age:''

@@ -1,5 +1,4 @@
 import { del, ins, upd } from "./UserAction"
-
 const initialState = {
     data:[]
 }

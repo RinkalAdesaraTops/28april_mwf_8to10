@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import CounterComponent from './CounterComponent'
 import UserComponent from './UserComponent'
+import RtkCounterComponent from './RtkCounterComponent'
 
 function App() {
   return (
    <>
     <h3>Redux Example</h3>
     {/* <CounterComponent /> */}
-    <UserComponent />
+    {/* <UserComponent /> */}
+    <RtkCounterComponent />
    </>
   )
 }
