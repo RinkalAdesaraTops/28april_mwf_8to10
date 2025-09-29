@@ -5,6 +5,7 @@ import './App.css'
 import CounterComponent from './CounterComponent'
 import UserComponent from './UserComponent'
 import RtkCounterComponent from './RtkCounterComponent'
+import CrudComponent from './CrudComponent'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     <h3>Redux Example</h3>
     {/* <CounterComponent /> */}
     {/* <UserComponent /> */}
-    <RtkCounterComponent />
+    {/* <RtkCounterComponent /> */}
+    <CrudComponent />
    </>
   )
 }
